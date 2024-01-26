@@ -40,7 +40,7 @@ class ExamEvaluator:
         self.is_clean = is_clean
         self.shift_check = shift_check
         self.evaluated_ids_count = defaultdict(list)  # only used for circular_eval
-        self.grade = ["小学", "初中", "高中"]
+        self.grade = ["primary", "middle", "high"]
         self.subject = [
             "math",
             "politics",
@@ -50,7 +50,7 @@ class ExamEvaluator:
             "geography",
             "physics",
         ]
-        self.difficulty = ["普通", "困难"]
+        self.difficulty = ["normal", "hard"]
         self.score_dict = self.init_score_dict()
         self.results = []
 
