@@ -1,7 +1,7 @@
 # CMMU
-[**📖 Paper**](assets/cmmu.pdf) | [**🤗 Dataset**](https://huggingface.co/datasets/BAAI/CMMU) | [**GitHub**](https://github.com/FlagOpen/CMMU)
+[**📖 Paper**](https://arxiv.org/abs/2401.14011) | [**🤗 Dataset**](https://huggingface.co/datasets/BAAI/CMMU) | [**GitHub**](https://github.com/FlagOpen/CMMU)
 
-This repo contains the evaluation code for the paper [**CMMU: A Benchmark for Chinese Multi-modal Multi-type Question Understanding and Reasoning**](assets/cmmu.pdf) .
+This repo contains the evaluation code for the paper [**CMMU: A Benchmark for Chinese Multi-modal Multi-type Question Understanding and Reasoning**](https://arxiv.org/abs/2401.14011) .
 
 We release the validation set of CMMU, you can download it from [here](https://huggingface.co/datasets/BAAI/CMMU). The test set will be hosted on the [flageval platform](https://flageval.baai.ac.cn/). Users can test by uploading their models.
 
@@ -108,7 +108,7 @@ python eval/evaluate.py --result example/gpt4v_results_val.json --data_root your
 @article{he2024cmmu,
         title={CMMU: A Benchmark for Chinese Multi-modal Multi-type Question Understanding and Reasoning},
         author={Zheqi He, Xinya Wu, Pengfei Zhou, Richeng Xuan, Guang Liu, Xi Yang, Qiannan Zhu and Hua Huang},
-        journal={arXiv preprint},
+        journal={arXiv preprint arXiv:2401.14011},
         year={2024},
       }
 ```
