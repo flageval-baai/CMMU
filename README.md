@@ -89,17 +89,17 @@ Current code call gpt4 API by `AzureOpenAI`, maybe you need to modify [`eval/cha
 
 Run 
 ```shell
-python eval/evaluate.py --result your_pred_file --data_root your_path_to_cmmu_dataset
+python eval/evaluate.py --result your_pred_file --data-root your_path_to_cmmu_dataset
 ```
 
 **NOTE:** We evaluate fill-in-the-blank questions using GPT-4 by default. If you do not have access to GPT-4, you can attempt to use a rule-based method to fill in the blanks. However, be aware that the results might differ from the official ones.
 ```shell
-python eval/evaluate.py --result your_pred_file --data_root your_path_to_cmmu_dataset --gpt none
+python eval/evaluate.py --result your_pred_file --data-root your_path_to_cmmu_dataset --gpt none
 ```
 
 To evaluate specific type of questions, you can use `--qtype` parameter, for example:
 ```shell
-python eval/evaluate.py --result example/gpt4v_results_val.json --data_root your_path_to_cmmu_dataset --qtype fbq mrq
+python eval/evaluate.py --result example/gpt4v_results_val.json --data-root your_path_to_cmmu_dataset --qtype fbq mrq
 ```
 
 ## Citation
