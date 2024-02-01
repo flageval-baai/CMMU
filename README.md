@@ -102,6 +102,8 @@ To evaluate specific type of questions, you can use `--qtype` parameter, for exa
 python eval/evaluate.py --result example/gpt4v_results_val.json --data-root your_path_to_cmmu_dataset --qtype fbq mrq
 ```
 
+Detailed evaluation results are saved in `*_result.json`
+
 ## Citation
 **BibTeX:**
 ```bibtex

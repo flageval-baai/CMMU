@@ -50,14 +50,8 @@ def main(args):
         shift_check=shift_check,
         gpt_model_name=gpt_model_name,
     )
-    results = evaluator.process(dataset, args.result)
-    total_questions, total_right = 0, 0
-    print("\n\n=========================FINAL RESULTS================================")
-    for qtype, res in results.items():
-        total_right += res[0]
-        total_questions += res[1]
-        print(f"{qtype}: {res[0]/res[1] * 100:.5f} ({res[0]} / {res[1]})")
-    print(f"Accuracy Overall: {total_right/total_questions * 100:.5f} ({total_right} / {total_questions})")
+    evaluator.process(dataset, args.result)
+
 
 if __name__ == "__main__":
     args = parse_args()
