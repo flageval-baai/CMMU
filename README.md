@@ -12,18 +12,36 @@ CMMU is a novel multi-modal benchmark designed to evaluate domain-specific knowl
 ## Evaluation Results
 We currently evaluated 10 models on CMMU. The results are shown in the following table.
 
+**Evaluate fill-in-the-blank questions by GPT-4**
+
 | Model                       | Val Avg. | Test Avg. |
 |-----------------------------|----------|-----------|
 | InstructBLIP-13b            | 0.39     | 0.48      |
-| CogVLM-7b                   | 5.55     | 4.9       |
+| CogVLM-7b                   | 5.55     | 4.90      |
 | ShareGPT4V-7b               | 7.95     | 7.63      |
 | mPLUG-Owl2-7b               | 8.69     | 8.58      |
 | LLava-1.5-13b               | 11.36    | 11.96     |
 | Qwen-VL-Chat-7b             | 11.71    | 12.14     |
 | Intern-XComposer-7b         | 17.87    | 18.42     |
-| Gemini-Pro                  | 21.58    | 22.5      |
+| Gemini-Pro                  | 21.58    | 22.50     |
 | Qwen-VL-Plus                | 27.51    | 27.73     |
 | GPT-4V                      | 30.19    | 30.91     |
+
+
+**Evaluate fill-in-the-blank questions by rules**
+
+| Model                       | Val Avg. | Test Avg. |
+|-----------------------------|----------|-----------|
+| InstructBLIP-13b            | 0.04     | 0.00      |
+| CogVLM-7b                   | 4.02     | 3.73      |
+| ShareGPT4V-7b               | 5.85     | 5.07      |
+| mPLUG-Owl2-7b               | 7.08     | 6.85      |
+| LLava-1.5-13b               | 8.17     | 8.06      |
+| Qwen-VL-Chat-7b             | 7.73     | 8.28      |
+| Intern-XComposer-7b         | 16.95    | 16.30     |
+| Gemini-Pro                  | 18.77    | 17.87     |
+| Qwen-VL-Plus                | 21.19    | 21.34     |
+| GPT-4V                      | 24.73    | 25.23     |
 
 ## How to use
 
